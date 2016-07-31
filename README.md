@@ -10,7 +10,7 @@
 
 ### Upload directory
 
-```
+```php
 /**
  * Upload directory to current server.
  *
@@ -23,9 +23,8 @@
 function upload_dir($local, $remote, $options = [])
 ```
 
-
 Default options:
-```
+```php
 $options = [
     'ignore_unreadable_dirs' => true,
     'ignore_vcs' => true,
