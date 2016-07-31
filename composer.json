@@ -1,0 +1,17 @@
+{
+    "name": "lbausch/deployer-upload",
+    "description": "Enhanced upload functions for Deployer",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+        "deployer/deployer": "~3.0",
+        "symfony/finder": "~3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lorenz Bausch",
+            "email": "info@lorenzbausch.de"
+        }
+    ]
+}
