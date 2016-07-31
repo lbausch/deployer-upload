@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. `composer require lbausch/deployer-upload`
+1. `composer require lbausch/deployer-upload --dev`
 
 1. `require 'vendor/lbausch/deployer-upload/src/upload.php';` in your recipe
 
