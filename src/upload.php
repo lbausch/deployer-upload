@@ -1,6 +1,9 @@
 <?php
 
+namespace Deployer;
+
 use Deployer\Task\Context;
+use Symfony\Component\Finder\Finder;
 
 if (!function_exists('upload_dir')) {
 
@@ -23,17 +26,17 @@ if (!function_exists('upload_dir')) {
 
         $server = Context::get()->getServer();
 
-        $local = env()->parse($local);
+        $local = parse($local);
 
         if (!is_dir($local)) {
             throw new \RuntimeException("Directory '$local' does not exist.");
         }
 
-        $remote = env()->parse($remote);
+        $remote = parse($remote);
 
         writeln("Upload from <info>$local</info> to <info>$remote</info>");
 
-        $finder = new Symfony\Component\Finder\Finder();
+        $finder = new Finder();
 
         $files = $finder->files()
             ->ignoreUnreadableDirs($options['ignore_unreadable_dirs'])
